@@ -111,10 +111,19 @@ gsap.from("#page4 h1", {
   },
 });
 // Hyperlink GitHub repo in project section
+var githubLinks = [
+  "https://github.com/YOUR_GITHUB_REPO_1", // First card's GitHub repo
+  "https://github.com/YOUR_GITHUB_REPO_2", // Second card's GitHub repo
+  "https://github.com/YOUR_GITHUB_REPO_3", // Third card's GitHub repo
+];
+
 var cards = document.querySelectorAll(".card");
-cards.forEach(function (card) {
+
+cards.forEach(function (card, index) {
   card.addEventListener("click", function () {
-    window.open("https://github.com/YOUR_GITHUB_REPO", "_blank"); // Replace with your actual GitHub repo link
+    if (index < githubLinks.length) {
+      window.open(githubLinks[index], "_blank");
+    }
   });
 });
 
