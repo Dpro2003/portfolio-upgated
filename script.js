@@ -112,9 +112,9 @@ gsap.from("#page4 h1", {
 });
 // Hyperlink GitHub repo in project section
 var githubLinks = [
-  "https://github.com/YOUR_GITHUB_REPO_1", // First card's GitHub repo
-  "https://github.com/YOUR_GITHUB_REPO_2", // Second card's GitHub repo
-  "https://github.com/YOUR_GITHUB_REPO_3", // Third card's GitHub repo
+  "https://weather-app-sigma-ebon-53.vercel.app/", // First card's GitHub repo
+  "https://github.com/Dpro2003/DeepFake", // Second card's GitHub repo
+  "https://github.com/Dpro2003/crop_recmmendation_by_weather-and-soil-details", // Third card's GitHub repo
 ];
 
 var cards = document.querySelectorAll(".card");
